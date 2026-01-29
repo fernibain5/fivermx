@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gracias</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .wrap { min-height: 100vh; display: grid; place-items: center; padding: 24px; }
+    .card { max-width: 560px; width: 100%; border: 1px solid rgba(0,0,0,0.1); border-radius: 12px; padding: 28px; box-shadow: 0 6px 24px rgba(0,0,0,0.08); background: Canvas; color: CanvasText; }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    p { margin: 0 0 20px; line-height: 1.5; opacity: 0.9; }
+    .actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .btn { appearance: none; border: none; border-radius: 8px; padding: 10px 16px; cursor: pointer; font-weight: 600; background: #1e88e5; color: #fff; }
+    .btn:hover { background: #1565c0; }
+    .link { color: #1e88e5; text-decoration: none; font-weight: 600; }
+    .link:hover { text-decoration: underline; }
+  </style>
+  <script>
+    function goBack() {
+      if (history.length > 1) {
+        history.back();
+      } else {
+        window.location.href = 'index.html';
+      }
+    }
+  </script>
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="Gracias por tu mensaje." />
+  <link rel="icon" href="images/fiver-logo.jpg">
+  
+  <!-- Auto-scroll to top when arriving from external POST redirect -->
+  <script>window.scrollTo(0,0)</script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>¡Gracias!</h1>
+      <p>Tu mensaje fue enviado correctamente. Te contactaremos lo antes posible.</p>
+      <div class="actions">
+        <button class="btn" onclick="goBack()">Volver</button>
+        <a class="link" href="index.html">Ir al inicio</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,155 @@
+.map-container {
+    width: 100%;
+    max-width: 800px; /* Ancho máximo ajustable según necesidades */
+    height: 350px; /* Altura definida */
+    margin: 5% auto 10%; /* Margen arriba y abajo, y centrado horizontalmente */
+    position: relative;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0; /* Eliminar borde */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.house-card {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.house-card img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+.house-details {
+    padding: 20px;
+    width: 60%;
+}
+
+.house-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.house-description {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.house-info {
+    font-size: 14px;
+    color: #555;
+}
+
+.price {
+    font-size: 20px;
+    color: #e74c3c;
+    margin-top: 10px;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.contact-btn:hover {
+    background-color: #2980b9;
+}
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    cursor: grab;
+    user-select: none; /* Evita que el texto se seleccione al arrastrar */
+}
+
+.slider:active {
+    cursor: grabbing;
+}
+
+.slide {
+    min-width: 150px;
+    margin: 0 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 auto; /* Evita que los slides se ajusten al tamaño del contenedor */
+}
+
+.slide:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slide a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto */
+    display: block; /* Hace que el enlace ocupe todo el espacio del slide */
+}
+
+.slide img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.slide p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* @media screen and (min-width: 768px) {
+    .map-container {
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .map-container {
+        width: 83%;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .map-container {
+        width: 75%;
+        margin-top: 3%; 
+    }
+} */
