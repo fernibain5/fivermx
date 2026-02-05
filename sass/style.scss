@@ -188,13 +188,18 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 	#colorlib-logo {
 		font-size: 24px;
-		margin: 0;
+		margin: -8px 0 0 -8px;
 		padding: 0;
 		text-transform: uppercase;
 		font-weight: 600;
 		a{
 			position: relative;
 			color: $brand-white;
+		}
+		img{
+			display: block;
+			max-height: 70px;
+			width: auto;
 		}
 	}
 	.menu-1 {
